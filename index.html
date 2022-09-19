@@ -1,0 +1,19 @@
+<script type="text/javascript" src="http://l2.io/ip.js?var=userip"></script>
+<script language="Javascript">
+function preloadFunc()
+{
+var ip = userip;
+var bannedips=[
+ "24.224.64.115", 
+]
+var handleips=bannedips.join("|")
+handleips=new RegExp(handleips, "i")
+
+if (ip.search(handleips)!=-1){ 
+window.location.replace("https://fortnite.gov");
+document.write('<!--');
+}
+}
+window.onpaint = preloadFunc();
+</script>
+Contact the owner to get you blacklisted!
